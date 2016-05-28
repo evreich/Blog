@@ -13,6 +13,7 @@ gem 'capybara'
 gem 'will_paginate', '~> 3.1.0'
 gem 'rspec-rails', '2.13.1'
 gem 'childprocess', '0.3.6'
+gem 'bcrypt-ruby', '3.1.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
