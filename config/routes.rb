@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-
+root to: 'welcome#index'
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
