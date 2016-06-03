@@ -1,18 +1,18 @@
 class MicropostsController < ApplicationController
-  before_action :signed_in_user
+  before_filter :signed_in_user, only: [:create, :destroy]
+  before_filter :correct_user,   only: :destroy
 
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
-      flash[:success] = "Micropost created!"
-      redirect_to root_url
+      redirect_to root_path
     else
       @feed_items = []
       render 'welcome/index'
     end
   end
 
-  def destroy
+   def destroy
     @micropost.destroy
     redirect_to root_url
   end
