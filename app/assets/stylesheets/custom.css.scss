@@ -146,15 +146,6 @@ aside {
   }
 }
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-
-.gravatar_edit {
-  margin-top: 15px;
-}
-
 .stats {
   overflow: auto;
   margin-top: 0;
@@ -178,17 +169,6 @@ aside {
   }
 }
 
-.user_avatars {
-  overflow: auto;
-  margin-top: 10px;
-  .gravatar {
-    margin: 1px 1px;
-  }
-  a {
-    padding: 0;
-  }
-}
-
 .users.follow {
   padding: 0;
 }
@@ -202,9 +182,6 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
-
-
-
 
 input {
   height: auto !important;
@@ -224,8 +201,6 @@ input {
     color: $state-danger-text;
   }
 }
-
-
 
 .checkbox {
   margin-top: -10px;
@@ -279,11 +254,7 @@ input {
     display: block;
     margin-left: 60px;
   }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
+
 }
 
 aside {
@@ -298,5 +269,32 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.navbar-inverse{
+  background-color: #b00;
+  .navbar-nav > li >a{
+    color:white;
+  }
+  .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus{
+    background-color: #d00;
+  
+  }
+}
+
+a{
+  color: #b00;
+}
+a:hover, .stats a:hover{
+  color:#d00;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active{
+  background-color: #d00;
+}
+
+.btn-primary{
+  background-color: #b00;
+  border: none;
 }
 
