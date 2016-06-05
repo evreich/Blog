@@ -1,0 +1,15 @@
+<h1>Update micropost</h1>
+
+<div class="row" align='center'>
+  <div class="span6 offset3">
+    <%= form_for(@micropost) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+
+<p>  
+  <%= f.submit "Save changes", class: "btn btn-large btn-primary" %></p>
+    <% end %>
+</div>
+</div>
